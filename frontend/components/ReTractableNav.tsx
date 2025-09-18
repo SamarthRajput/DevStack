@@ -2,10 +2,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import {
-  FaStar,
-  FaChevronDown,
-} from "react-icons/fa6";
+import { FaStar, FaChevronDown } from "react-icons/fa6";
 import SmallNav from "./ReTractableNav";
 
 const PRODUCTS = [
