@@ -6,7 +6,7 @@ import {
   FaStar,
   FaChevronDown,
 } from "react-icons/fa6";
-import SmallNav from "./ReTractableNav";
+
 
 const PRODUCTS = [
   { label: "Auth", description: "Secure login with multi-factor auth.", href: "#" },
@@ -19,16 +19,9 @@ const PRODUCTS = [
 ];
 
 export default function Navbar() {
-  const [stars, setStars] = useState(0);
+  const [stars, setStars] = useState(10);
   const [productsOpen, setProductsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
-  // Fetch GitHub stars live
-  useEffect(() => {
-    fetch("https://api.github.com/repos/SamarthRajput/DevStack")
-      .then((res) => res.json())
-      .then((data) => setStars(data.stargazers_count || 0));
-  }, []);
 
   // Handle navbar background on scroll
   useEffect(() => {
@@ -122,11 +115,10 @@ export default function Navbar() {
           {/* Call-to-action button */}
           <Link
             href="/signin"
-            className="ml-2 rounded-md bg-fuchsia-600 hover:bg-fuchsia-500 transition px-5 py-2 text-sm font-semibold text-white"
+            className="ml-2 rounded-md bg-purple-500  hover:bg-purple-500 transition px-5 py-2 text-sm font-semibold text-white"
           >
             Sign In
           </Link>
-          <SmallNav />
         </div>
       </div>
     </motion.div>
