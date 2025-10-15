@@ -1,9 +1,15 @@
-import Hero from "../components/Hero";
+import Features from "@/components/LandingPage/Features";
+import Footer from "@/components/LandingPage/Footer";
+import Hero from "@/components/LandingPage/Hero";
+import Pricing from "@/components/LandingPage/Pricing";
 
 export default function Home() {
   return (
-    <div className="font-sans">
+     <div className="min-h-screen">
       <Hero />
+      <Features />
+      <Pricing />
+      <Footer />
     </div>
   );
 }
