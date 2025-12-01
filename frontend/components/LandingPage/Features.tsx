@@ -1,36 +1,66 @@
-import { Database, Lock, HardDrive, Zap, Code, Globe } from "lucide-react";
+import { Database, Lock, HardDrive, Zap, Code, Globe, Mail, FileUp, Shield, Gauge, Bell, CreditCard } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const features = [
   {
-    icon: Database,
-    title: "PostgreSQL Database",
-    description: "Powerful relational database with real-time subscriptions and automatic backups.",
-  },
-  {
     icon: Lock,
     title: "Authentication",
-    description: "Built-in auth with social providers, magic links, and JWT tokens out of the box.",
+    description: "Signup/Signin with JWT, bcrypt password hashing, and email uniqueness validation.",
   },
   {
-    icon: HardDrive,
-    title: "File Storage",
-    description: "Scalable object storage with CDN integration for fast global delivery.",
+    icon: Database,
+    title: "Database CRUD",
+    description: "Dynamic model creation with automatic RESTful APIs, pagination, filtering, and sorting.",
   },
   {
-    icon: Zap,
-    title: "Serverless Functions",
-    description: "Deploy backend logic instantly with auto-scaling serverless compute.",
+    icon: Mail,
+    title: "Email Services",
+    description: "OTP verification, transactional emails, bulk emails, and template support with Nodemailer.",
+  },
+  {
+    icon: FileUp,
+    title: "File Upload",
+    description: "Single/multiple file uploads with validation, size limits, and MIME type filtering.",
+  },
+  {
+    icon: Shield,
+    title: "Rate Limiting",
+    description: "Protect APIs from abuse with configurable rate limits and automatic cleanup.",
+  },
+  {
+    icon: Gauge,
+    title: "Cache Service",
+    description: "In-memory caching with TTL and LRU eviction for improved performance.",
+  },
+  {
+    icon: Bell,
+    title: "Push Notifications",
+    description: "Web Push API with VAPID authentication for browser push notifications.",
+  },
+  {
+    icon: CreditCard,
+    title: "Payment Integration",
+    description: "Unified payment gateway supporting both Stripe and Razorpay.",
   },
   {
     icon: Code,
-    title: "REST & GraphQL APIs",
-    description: "Auto-generated APIs with full TypeScript support and OpenAPI specs.",
+    title: "Logging Service",
+    description: "Comprehensive request/error logging with file output and custom formatters.",
+  },
+  {
+    icon: Zap,
+    title: "Express + MongoDB",
+    description: "Production-ready server setup with CORS, JSON parsing, and MongoDB connection.",
+  },
+  {
+    icon: Lock,
+    title: "Profile Management",
+    description: "JWT-protected user profile with secure password updates and data retrieval.",
   },
   {
     icon: Globe,
-    title: "Edge Network",
-    description: "Global edge deployment for ultra-low latency from anywhere in the world.",
+    title: "Production Ready",
+    description: "Built with industry best practices, Zod validation, and comprehensive error handling.",
   },
 ];
 
@@ -43,7 +73,7 @@ const Features = () => {
             Everything you need to build
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A complete backend platform that scales from prototype to production without the complexity.
+            11+ production-ready services to accelerate your backend development. No more boilerplate code.
           </p>
         </div>
         
