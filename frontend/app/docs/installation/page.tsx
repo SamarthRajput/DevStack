@@ -276,7 +276,7 @@ console.log("   POST /signin");`}
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4">Additional Service Setup</h2>
         <p className="text-muted-foreground mb-4">
-          DevstackBackend includes 11+ services. Here's how to enable additional services:
+          DevstackBackend includes 11+ services. Here&apos;s how to enable additional services:
         </p>
 
         <div className="space-y-4">
@@ -291,7 +291,7 @@ console.log("   POST /signin");`}
               <ol className="list-decimal list-inside space-y-2 text-sm text-muted-foreground">
                 <li>Go to your Google Account settings</li>
                 <li>Enable 2-Factor Authentication</li>
-                <li>Generate an App Password for "Mail"</li>
+                <li>Generate an App Password for &quot;Mail&quot;</li>
                 <li>Use the generated password in <code className="bg-muted px-2 py-1 rounded">EMAIL_PASS</code></li>
               </ol>
               <a

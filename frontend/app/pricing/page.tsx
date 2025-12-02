@@ -140,7 +140,7 @@ export default function PricingPage() {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold mb-2">What's included in support plans?</h3>
+              <h3 className="font-semibold mb-2">What&apos;s included in support plans?</h3>
               <p className="text-muted-foreground">
                 Support plans give you direct access to the maintainers for help with implementation, troubleshooting, and custom features.
               </p>

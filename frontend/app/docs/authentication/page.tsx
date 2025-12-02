@@ -35,7 +35,7 @@ export default function AuthenticationPage() {
         <h2 className="text-2xl font-bold mb-4">Overview</h2>
         <p className="text-muted-foreground mb-4">
           The Authentication service provides secure user signup and signin with JWT token generation, 
-          bcrypt password hashing, and email validation. It's production-ready with built-in security best practices.
+          bcrypt password hashing, and email validation. It&apos;s production-ready with built-in security best practices.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
